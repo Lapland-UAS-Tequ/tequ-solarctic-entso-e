@@ -1,2 +1,2 @@
 # tequ-solarctic-entso-e
-Simple Node-RED application to query future or historical electricity prices from ENTSO-E Transparency Platform.
+Simple Node-RED flow to query future or historical electricity prices from ENTSO-E Transparency Platform.
