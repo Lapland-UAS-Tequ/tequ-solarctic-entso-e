@@ -3,9 +3,10 @@ Simple Node-RED flow to query future or historical electricity spot prices from 
 
 ### Install Node.js & Node-RED
 
-Follow instructions from https://nodejs.org/en
+Follow instructions from
+- https://nodejs.org/en
+- https://nodered.org/docs/getting-started/
 
-Follow instructions from [https://nodered.org/](https://nodered.org/docs/getting-started/)
 
 ### Install moment library for timestamp formatting
 
