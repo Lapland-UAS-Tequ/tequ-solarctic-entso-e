@@ -1,11 +1,9 @@
 # tequ-solarctic-entso-e
 Simple Node-RED flow to query future or historical electricity spot prices from ENTSO-E Transparency Platform.
 
-### Install Node.js
+### Install Node.js & Node-RED
 
 Follow instructions from https://nodejs.org/en
-
-### Install Node-RED
 
 Follow instructions from [https://nodered.org/](https://nodered.org/docs/getting-started/)
 
