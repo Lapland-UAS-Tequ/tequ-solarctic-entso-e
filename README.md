@@ -12,6 +12,14 @@ process.env["entsoe-apikey"] = "YOUR_ENTSO-E_APIKEY"
 
 Copy and import following flow into your Node-RED environment.
 
+When you run the flow, it will return array of JSON objects, where "ts" is timestamp in UTC format and price is spot price €/kWh.
+```
+{
+  "ts":"2023-05-15T22:00:00.000Z",
+  "price":0.57
+}
+```
+
 ![Application flow](flow.PNG)
 
 ```
