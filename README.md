@@ -1,16 +1,30 @@
 # tequ-solarctic-entso-e
 Simple Node-RED flow to query future or historical electricity spot prices from ENTSO-E Transparency Platform.
 
-- Install Node.js
-- Install Node-RED
-- Install node-red-contrib-moment
-- Add your ENTSO-E API key as environmental variable "entsoe-apikey" in Node-RED settings.js file
+### Install Node.js
 
+Follow instructions from https://nodejs.org/en
+
+### Install Node-RED
+
+Follow instructions from [https://nodered.org/](https://nodered.org/docs/getting-started/)
+
+### Install moment library for timestamp formatting
+
+Use palette manager in Node-RED or run command in your Node-RED folder
+
+```
+npm install node-red-contrib-moment
+```
+
+### Add your ENTSO-E API key as environmental variable "entsoe-apikey" in Node-RED settings.js file
+
+Find and open settings.js from your Node-RED folder and add following line
 ```
 process.env["entsoe-apikey"] = "YOUR_ENTSO-E_APIKEY"
 ```
 
-Copy and import following flow into your Node-RED environment.
+### Copy and import example flow into your Node-RED environment.
 
 When you run the flow, it will return array of JSON objects, where "ts" is timestamp in UTC format and price is spot price €/kWh.
 ```
