@@ -1,5 +1,11 @@
+This repository is developed in Solarctic-project
+
+https://www.tequ.fi/fi/project-bank/solarctic/
+
+------------------------------------------------------------------------------------
+
 # tequ-solarctic-entso-e
-Simple Node-RED flow to query future or historical electricity spot prices from ENTSO-E Transparency Platform.
+Simple Node-RED flow to query future or historical electricity spot prices from ENTSO-E Transparency Platform. This example uses "Europe/Helsinki"-timezone for timestamps and Finland domain for spot-price. Example queries spot-prices starting from today until tomorrow and returns time and price as array of JSON objects. Future data for Finland domain should be available in one hour after Nord Pool has published spot prices. Nord pool publishes its spot prices around 14:00 (Finland time). 
 
 ### 1. Install Node.js & Node-RED
 
@@ -25,7 +31,7 @@ process.env["entsoe-apikey"] = "YOUR_ENTSO-E_APIKEY"
 
 ### 4. Copy and import example flow into your Node-RED environment.
 
-When you run the flow, it will return array of JSON objects in "msg.payload", where "ts" is timestamp in UTC format and price is spot price €/kWh for that timestamp. Example flow uses "Europe/Helsinki" timezone for timestamps.
+When you run the flow, it will return array of JSON objects in "msg.payload", where "ts" is timestamp in UTC format and price is spot price €/kWh for that timestamp. 
 ```
 [
   {
